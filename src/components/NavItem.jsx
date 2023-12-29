@@ -4,7 +4,7 @@ export default function NavItem({ name, icon }) {
   return (
     <div className="group text-white flex items-center gap-x-3">
       <span>{icon}</span>
-      <span className="uppercase font-medium group-hover:underline">
+      <span className="uppercase font-medium group-hover:underline underline-offset-8">
         {name}
       </span>
     </div>

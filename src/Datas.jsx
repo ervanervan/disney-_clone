@@ -10,26 +10,26 @@ import {
 export const MENUS = [
   {
     name: "home",
-    icon: <HomeIcon className="h-6 w-6 text-white" />,
+    icon: <HomeIcon className="h-5 w-5 text-white" />,
   },
   {
     name: "search",
-    icon: <MagnifyingGlassIcon className="h-6 w-6 text-white" />,
+    icon: <MagnifyingGlassIcon className="h-5 w-5 text-white" />,
   },
   {
     name: "watch list",
-    icon: <PlusIcon className="h-6 w-6 text-white" />,
+    icon: <PlusIcon className="h-5 w-5 text-white" />,
   },
   {
     name: "originals",
-    icon: <StarIcon className="h-6 w-6 text-white" />,
+    icon: <StarIcon className="h-5 w-5 text-white" />,
   },
   {
     name: "movies",
-    icon: <PlayCircleIcon className="h-6 w-6 text-white" />,
+    icon: <PlayCircleIcon className="h-5 w-5 text-white" />,
   },
   {
     name: "series",
-    icon: <TvIcon className="h-6 w-6 text-white" />,
+    icon: <TvIcon className="h-5 w-5 text-white" />,
   },
 ];

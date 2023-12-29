@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <main className="px-6 max-w-7xl mx-auto">
+      <main className="px-5 md:px-0 container mx-auto">
         <Navbar />
       </main>
     </>
