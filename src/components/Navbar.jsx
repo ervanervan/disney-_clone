@@ -9,8 +9,8 @@ export default function Navbar() {
   return (
     <header>
       <nav className="flex items-center justify-between py-5">
-        <div className="flex items-center gap-x-3 lg:gap-x-10">
-          <img src={logo} alt="logo disney+" className="w-24 lg:w-36 -ml-5" />
+        <div className="flex items-center gap-x-1 lg:gap-x-10">
+          <img src={logo} alt="logo disney+" className="w-28 lg:w-36 -ml-5" />
           <div className="lg:flex gap-x-6 hidden">
             {MENUS.map((menu, i) => (
               <NavItem key={i} name={menu.name} icon={menu.icon} />
@@ -27,7 +27,7 @@ export default function Navbar() {
                 icon={<EllipsisVerticalIcon className="h-5 w-5 text-white" />}
               />
               {toogle ? (
-                <div className="absolute top-20 right-2 bg-gray-900 px-6 py-4 border border-gray-800 rounded-sm flex flex-col gap-y-3">
+                <div className="absolute z-10 top-20 right-2 md:right-[22rem] bg-gray-900 px-6 py-4 border border-gray-800 rounded-sm flex flex-col gap-y-3">
                   {MENUS.map(
                     (menu, i) =>
                       i > 2 && (
@@ -39,8 +39,8 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white">
-          <h1 className="text-gray-950 font-bold text-xl">E</h1>
+        <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white">
+          <h1 className="text-gray-950 font-bold text-lg md:text-xl">E</h1>
         </div>
       </nav>
     </header>
