@@ -8,7 +8,7 @@ export default function FavoriteSeries() {
         {LIST_SERIES.map((series) => (
           <div
             key={series.id}
-            className="relative border border-gray-800 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+            className="relative border border-gray-800 shadow-2xl shadow-gray-900 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
           >
             <img
               src={series.imageURL}
