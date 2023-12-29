@@ -7,8 +7,8 @@ function App() {
     <>
       <main className="px-5 md:px-0 container mx-auto">
         <Navbar />
-        <Slider />
       </main>
+      <Slider />
     </>
   );
 }

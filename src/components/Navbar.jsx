@@ -10,7 +10,7 @@ export default function Navbar() {
     <header>
       <nav className="flex items-center justify-between py-5">
         <div className="flex items-center gap-x-3 lg:gap-x-10">
-          <img src={logo} alt="logo disney+" className="w-24 lg:w-36" />
+          <img src={logo} alt="logo disney+" className="w-24 lg:w-36 -ml-5" />
           <div className="lg:flex gap-x-6 hidden">
             {MENUS.map((menu, i) => (
               <NavItem key={i} name={menu.name} icon={menu.icon} />
