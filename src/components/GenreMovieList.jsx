@@ -8,7 +8,7 @@ export default function GenreMovieList() {
       {GENRELISTS.map(
         (genre, index) =>
           index <= 4 && (
-            <div key={genre.id} className="py-5">
+            <div key={genre.id} className="pt-5">
               <h1 className="text-white font-medium text-xl px-5 md:px-10">
                 {genre.name}
               </h1>

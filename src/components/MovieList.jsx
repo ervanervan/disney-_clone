@@ -17,7 +17,7 @@ export default function MovieList({ genreId }) {
   };
 
   return (
-    <div className="flex overflow-x-auto gap-5 scrollbar-hide px-5 md:px-10 pt-5">
+    <div className="flex overflow-x-auto gap-5 scrollbar-hide px-5 md:px-10">
       {movieList.map((item, index) => (
         <MovieCard movie={item} key={index} />
       ))}
