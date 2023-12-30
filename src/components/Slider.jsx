@@ -46,7 +46,7 @@ export default function Slider() {
             key={item.id}
             src={IMAGE_BASE_URL + item.backdrop_path}
             alt=""
-            className="min-w-full md:h-80 object-cover object-left-top rounded-lg border-4 border-gray-900 hover:border-4 hover:border-gray-300 transition-all duration-300 ease-in-out"
+            className="cursor-pointer min-w-full md:h-80 object-cover object-left-top rounded-lg border-4 border-gray-900 hover:border-4 hover:border-gray-300 transition-all duration-300 ease-in-out"
           />
         ))}
       </div>
