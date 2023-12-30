@@ -29,16 +29,16 @@ export default function Slider() {
   return (
     <section className="relative">
       <ChevronLeftIcon
-        className="absolute w-8 h-8 text-gray-200 cursor-pointer left-10 top-1/2 -translate-y-1/2 hidden md:block"
+        className="absolute w-8 h-8 text-gray-200 cursor-pointer left-[4.50rem] top-1/2 -translate-y-1/2 hidden md:block"
         onClick={() => sliderLeft(elementRef.current)}
       />
       <ChevronRightIcon
-        className="absolute w-8 h-8 text-gray-200 cursor-pointer right-10 top-1/2 -translate-y-1/2 hidden md:block"
+        className="absolute w-8 h-8 text-gray-200 cursor-pointer right-[4.50rem] top-1/2 -translate-y-1/2 hidden md:block"
         onClick={() => sliderRight(elementRef.current)}
       />
 
       <div
-        className="flex overflow-x-auto gap-6 py-6 pl-5 pr-10 md:px-10 lg:px-12 scrollbar-hide"
+        className="flex overflow-x-auto gap-6 py-6 pl-5 pr-10 md:px-[4.40rem] scrollbar-hide"
         ref={elementRef}
       >
         {movieList.map((item) => (

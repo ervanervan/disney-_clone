@@ -9,7 +9,7 @@ export default function GenreMovieList() {
         (genre, index) =>
           index <= 4 && (
             <div key={genre.id} className="pt-5">
-              <h1 className="text-white font-medium text-xl px-5 md:px-10">
+              <h1 className="text-white font-medium text-xl px-5 md:px-[4.40rem]">
                 {genre.name}
               </h1>
               <MovieList genreId={genre.id} index_={index} />
