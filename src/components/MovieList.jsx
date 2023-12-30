@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import MovieCard from "./MovieCard";
 import GlobalApi from "../services/GlobalApi";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import HorizontalMovieCard from "./HorizontalMovieCard";
 
-export default function MovieList({ genreId }) {
+export default function MovieList({ genreId, index_ }) {
   const [movieList, setMovieList] = useState([]);
   const elementRef = useRef(null);
 
@@ -37,7 +38,13 @@ export default function MovieList({ genreId }) {
         className="flex overflow-x-auto gap-5 scrollbar-hide px-5 md:px-10"
       >
         {movieList.map((item, index) => (
-          <MovieCard movie={item} key={index} />
+          <>
+            {index_ % 3 == 0 ? (
+              <HorizontalMovieCard movie={item} key={index} />
+            ) : (
+              <MovieCard movie={item} key={index} />
+            )}
+          </>
         ))}
       </div>
 

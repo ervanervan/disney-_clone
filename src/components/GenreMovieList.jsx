@@ -12,7 +12,7 @@ export default function GenreMovieList() {
               <h1 className="text-white font-medium text-xl px-5 md:px-10">
                 {genre.name}
               </h1>
-              <MovieList genreId={genre.id} />
+              <MovieList genreId={genre.id} index_={index} />
             </div>
           )
       )}
