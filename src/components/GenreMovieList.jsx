@@ -1,5 +1,21 @@
 import React from "react";
+import { GENRELISTS } from "../Datas";
+import MovieList from "./MovieList";
 
 export default function GenreMovieList() {
-  return <div>GenreMovieList</div>;
+  return (
+    <section>
+      {GENRELISTS.map(
+        (genre, index) =>
+          index <= 4 && (
+            <div key={genre.id} className="py-5">
+              <h1 className="text-white font-medium text-xl px-5 md:px-10">
+                {genre.name}
+              </h1>
+              <MovieList genreId={genre.id} />
+            </div>
+          )
+      )}
+    </section>
+  );
 }

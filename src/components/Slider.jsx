@@ -20,25 +20,25 @@ export default function Slider() {
   };
 
   const sliderRight = (element) => {
-    element.scrollLeft += screenWidth - 170;
+    element.scrollLeft += screenWidth - 90;
   };
   const sliderLeft = (element) => {
-    element.scrollLeft -= screenWidth - 170;
+    element.scrollLeft -= screenWidth - 90;
   };
 
   return (
     <section className="relative">
       <ChevronLeftIcon
-        className="absolute w-8 h-8 text-gray-200 cursor-pointer left-11 top-1/2 -translate-y-1/2 hidden md:block"
+        className="absolute w-8 h-8 text-gray-200 cursor-pointer left-10 top-1/2 -translate-y-1/2 hidden md:block"
         onClick={() => sliderLeft(elementRef.current)}
       />
       <ChevronRightIcon
-        className="absolute w-8 h-8 text-gray-200 cursor-pointer right-11 top-1/2 -translate-y-1/2 hidden md:block"
+        className="absolute w-8 h-8 text-gray-200 cursor-pointer right-10 top-1/2 -translate-y-1/2 hidden md:block"
         onClick={() => sliderRight(elementRef.current)}
       />
 
       <div
-        className="flex overflow-x-auto gap-6 py-6 pl-5 pr-10 md:px-10 lg:px-24 scrollbar-hide"
+        className="flex overflow-x-auto gap-6 py-6 pl-5 pr-10 md:px-10 lg:px-12 scrollbar-hide"
         ref={elementRef}
       >
         {movieList.map((item) => (
