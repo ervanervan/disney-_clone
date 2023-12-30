@@ -21,7 +21,7 @@ export default function FavoriteSeries() {
               playsInline
               loop
               muted
-              className="absolute top-0 w-[9.25rem] md:w-32 xl:w-56 opacity-0 hover:opacity-50"
+              className="absolute top-0 w-full opacity-0 hover:opacity-50"
             ></video>
           </div>
         ))}
