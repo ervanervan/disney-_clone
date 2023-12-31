@@ -35,7 +35,7 @@ export default function MovieList({ genreId, index_ }) {
 
       <div
         ref={elementRef}
-        className="flex overflow-x-auto gap-5 scrollbar-hide px-5 md:px-[4.40rem]"
+        className="flex overflow-x-auto gap-x-3 md:gap-x-5 scrollbar-hide px-5 md:px-[4.40rem]"
       >
         {movieList.map((item, index) => (
           <div key={index}>
