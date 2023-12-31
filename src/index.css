@@ -10,4 +10,7 @@
   body {
     @apply bg-slate-950;
   }
+  html {
+    @apply scrollbar scrollbar-w-3 scrollbar-thumb-gray-800 hover:scrollbar-thumb-gray-700 scrollbar-track-gray-950 scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
+  }
 }

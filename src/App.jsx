@@ -7,15 +7,17 @@ import GenreMovieList from "./components/GenreMovieList";
 function App() {
   return (
     <>
-      <main className="px-5 md:px-8 xl:px-0 container mx-auto">
-        <Navbar />
+      <main>
+        <section className="px-5 md:px-8 xl:px-0 container mx-auto">
+          <Navbar />
+        </section>
+        <Slider />
+        <section className="px-5 xl:px-0 container mx-auto">
+          <FavoriteSeries />
+        </section>
+        <GenreMovieList />
+        <Footer />
       </main>
-      <Slider />
-      <main className="px-5 xl:px-0 container mx-auto">
-        <FavoriteSeries />
-      </main>
-      <GenreMovieList />
-      <Footer />
     </>
   );
 }
