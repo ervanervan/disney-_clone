@@ -10,7 +10,7 @@ export default function HorizontalMovieCard({ movie }) {
         width={300}
         className="cursor-pointer max-w-32 md:max-w-56 rounded-md object-cover border-2 border-gray-900 hover:border-2 hover:border-gray-300 hover:scale-[102%] transition-all duration-300 ease-in-out"
       />
-      <h1 className="text-gray-300 font-semibold text-base line-clamp-1">
+      <h1 className="text-gray-300 font-semibold text-xs md:text-base line-clamp-1">
         {movie.title}
       </h1>
     </div>
