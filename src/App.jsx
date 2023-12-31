@@ -1,9 +1,9 @@
 import "./App.css";
-import FavoriteSeries from "./components/FavoriteSeries";
 import Footer from "./components/Footer";
-import GenreMovieList from "./components/GenreMovieList";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import FavoriteSeries from "./components/FavoriteSeries";
+import GenreMovieList from "./components/GenreMovieList";
 
 function App() {
   return (
