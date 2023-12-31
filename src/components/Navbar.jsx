@@ -24,7 +24,9 @@ export default function Navbar() {
             <div className="lg:hidden" onClick={() => setToogle(!toogle)}>
               <NavItem
                 name={""}
-                icon={<EllipsisVerticalIcon className="h-5 w-5 text-white" />}
+                icon={
+                  <EllipsisVerticalIcon className="h-5 w-5 text-gray-100" />
+                }
               />
               {toogle ? (
                 <div className="absolute z-10 top-20 right-2 md:right-[22rem] bg-gray-900 px-5 py-3 border border-gray-800 rounded-sm flex flex-col gap-y-3">
@@ -39,8 +41,8 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white">
-          <h1 className="text-gray-950 font-bold text-lg md:text-xl">E</h1>
+        <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-gray-300">
+          <h1 className="text-gray-800 font-bold text-lg md:text-xl">E</h1>
         </div>
       </nav>
     </header>
